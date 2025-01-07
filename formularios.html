@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <title> Rellena tu CV </title>
+            <link rel="shortcut icon" href="Favicon1.jpeg" type="image/jpeg" />
+            <meta name="description" content="En esta pagina web se va ha hacer el ejercicio que estamos trabajando en clase"/>
+            <meta name="keywords" content="meta, link, href"/>
+            <meta name="author" content="Pilar P" />
+            <meta name="copyright" content="Hector Real" />
+            <link rel="stylesheet" href="style.css">
+        </head>
+        
+        <h1> Indice </h1>
+
+        <body>
+           
+            <nav>
+                <ul>
+                    <li> <a href="Index.html"> Inicio</a> </li>
+                    <li> <a href="FormatoTexto.html">Formato del Texto</a></li>
+                    <li> <a href="listas.html"> Listas</a></li>
+                    <li> <a href="tablas.html">Tablas </a></li>
+                    <li> <a href="formularios.html">Formularios </a></li>
+                  
+                   
+                </ul>
+    
+            </nav>
+
+            <h1> Ejemplo 1</h1>
+        
+            <div>
+                <h1> Rellena tu CV </h1>
+
+                <form action="control_form.php" method="get">
+
+                    <label for="nombre"> Nombre: </label><br>
+                    <input type="text" id="nombre" name="nombre" maxlength="30" required><br><br>
+                    <label for="apellidos"> Apellidos: </label><br>
+                    <input type="text" id="apellidos" name="apellidos" maxlength="80" required><br><br>
+                    <label for="contraseña"> Contraseña: </label><br>
+                    <input type="password" id="contraseña" name="contraseña" maxlength="10" required><br><br>
+                    <label for="DNI"> DNI: </label><br>
+                    <input type="text" id="dni" name="dni" pattern="\d{8}[A-Za-z]" required title="8 dígitos seguidos de una letra."><br><br>
+                    Sexo <br/>
+                    <input type="radio" name="sexo" value="hombre" checked="checked" /> Hombre
+                    <input type="radio" name="sexo" value="mujer" /> Mujer<br><br>
+                    Incluir mi foto<br>
+                    <input type="file" name="incluir mi foto" /><br><br>
+                    <input name="boletin de novedades" type="checkbox" checked/> Suscribirme al boletin de novedades<br><br>
+                    <input type="button" name="guardar" value="Guardar Cambios">
+                    <input type="reset" name="limpiar" value="Borrar datos del formulario" />
+                </form>
+
+            </div>
+
+            <h1> Ejemplo 2</h1>
+
+            <div>
+                <h1> Rellena tu CV</h1>
+                <h2> Datos personales </h2>
+                <form action="insertar_producto.php" method="post">
+                  
+                    <label for="nombre"> Nombre: </label><br>
+                    <input type="text" id="nombre" name="nombre" maxlength="30" required><br><br>
+                    <label for="apellidos"> Apellidos: </label><br>
+                    <input type="text" id="apellidos" name="apellidos" maxlength="80" required><br><br>
+                    <label for="DNI"> DNI: </label><br>
+                    <input type="text" id="dni" name="dni" pattern="\d{8}[A-Za-z]" required title="8 dígitos seguidos de una letra."><br><br>
+                    
+                </form>
+
+            </div>
+
+            
+        </body>
+
+        <footer> 
+            Hector Real 2024. tlf: 648769043. e-mail:ejemplo@gmail.com
+       </footer>
+        
+    </html>
